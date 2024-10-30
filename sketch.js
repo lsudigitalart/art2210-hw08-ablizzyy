@@ -29,7 +29,8 @@ function setup() {
   // Trigger new creature generation
   function keyPressed() {
     if (key === ' ') {
-      background(255); // Clear background on each trigger
+      // Randomize background color
+      background(random(255), random(255), random(255));
   
       // Randomize creature properties
       let x = random(width * 0.3, width * 0.7);
@@ -45,3 +46,5 @@ function setup() {
     }
   }
   
+
+ 
